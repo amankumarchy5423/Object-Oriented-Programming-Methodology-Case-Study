@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-// Base class representing an animal
 class Animal {
 public:
     virtual void makeSound() const = 0; 
     virtual ~Animal() {} 
 };
 class Vertebrates:public Animal{
-    // virtual void makeSound()=0;
+    
 };
 
 class Invertebrates:public Animal{
-    // virtual void makeSound()=0;
+    
 };
 
 class Mammal : public Vertebrates {
@@ -20,31 +19,31 @@ public:
    
 };
 
-// Subclass for birds
+
 class Bird : public Vertebrates {
 public:
    
 };
 
-// Subclass for fish
+
 class Fish : public Vertebrates {
 public:
  
 };
 
-// Subclass for Reptiles
+
 class Reptile : public Vertebrates {
     public:
 
 };
 
-// Subclass for worm
+
 class worm:public Invertebrates{
     public:
     
 };
 
-// concrete class for lion
+
 class Lion : public Mammal {
 public:
     void makeSound() const override {
@@ -53,7 +52,7 @@ public:
     }
 };
 
-// Concrete class for a parrot
+
 class Parrot : public Bird {
 public:
     void makeSound() const override {
@@ -61,7 +60,7 @@ public:
     }
 };
 
-//concerete class for a Fish
+
 class Dolphins:public Fish{
     public:
     void makeSound() const override {
@@ -70,7 +69,7 @@ class Dolphins:public Fish{
 
 };
 
-//concerete class for a snake
+
 class Snake:public Reptile{
     public:
     void makeSound() const override {
